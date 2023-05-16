@@ -51,7 +51,7 @@ function atualizaTabela() {                                 //função para adic
 function atualizaMediaFinal(){
     const mediaFinal = calculaMediaFinal();
 
-    document.getElementById('media-final-valor').innerHTML = mediaFinal;   //recuperando o elemento e escrevendo no html simultaneamente
+    document.getElementById('media-final-valor').innerHTML = mediaFinal.toFixed(2);   //recuperando o elemento e escrevendo no html simultaneamente
     document.getElementById('media-final-resultado').innerHTML = mediaFinal >= notaMinima ? spanAprovado : spanReprovado;    //recuperando o elemento e escrevendo no html simultaneamente com o operador ternário calculando o resultado
 };
 
